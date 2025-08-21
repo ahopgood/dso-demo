@@ -2,7 +2,7 @@
 
 Sample spring application with Jenkins pipeline script to demonstrate secure pipelines
 
-## Pre Requesites
+## Pre Requisites
 
 - minikube v1.18.1 - [Refer here for installation](https://kubernetes.io/docs/tasks/tools/install-minikube/)
 - helm v3.5.3 - [Refer here for installation](https://helm.sh/docs/intro/install/)
@@ -18,7 +18,7 @@ Sample spring application with Jenkins pipeline script to demonstrate secure pip
 
 ### Jenkins setup
 
-- Stup Jenkins server
+- Setup Jenkins server
 
   ```s
   helm repo add jenkins https://charts.jenkins.io
