@@ -96,7 +96,7 @@ pipeline {
         stage('OCI Image BnP') {
           steps {
             container('kaniko') {
-              sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --custom-platform=linux/arm64 --insecure --skip-tls-verify --cache=true --destination=docker.io/altairbob/dso-demo'
+              sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --customPlatform=linux/arm64 --insecure --skip-tls-verify --cache=true --destination=docker.io/altairbob/dso-demo'
             }
           }
         }
