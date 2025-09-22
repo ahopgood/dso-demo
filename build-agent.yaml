@@ -58,6 +58,12 @@ spec:
       command:
         - cat
       tty: true
+    - name: argocd-cli
+      image: schoolofdevops/argocd-cli
+      imagePullPolicy: Always
+      command:
+        - cat
+      tty: true
   volumes:
     - name: m2
       hostPath:
