@@ -65,7 +65,7 @@ spec:
         - cat
       tty: true
     - name: zap
-      image: owasp/zap2docker-stable
+      image: zaproxy/zap-stable
       imagePullPolicy: Always
       command:
         - cat
