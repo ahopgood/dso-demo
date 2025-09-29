@@ -125,7 +125,7 @@ pipeline {
     stage('Deploy to Dev') {
         environment {
             AUTH_TOKEN = credentials('argocd-jenkins-deployer-token')
-            ARGO_SERVER = 'argocd-server.svc.cluster.local:80'
+            ARGO_SERVER = 'argocd-server.argocd.svc.cluster.local:80'
         }
         steps {
             container('argocd-cli') {
