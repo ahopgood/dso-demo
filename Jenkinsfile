@@ -152,8 +152,8 @@ pipeline {
 //                     container('owasp-zap') {
 //                         sh 'zap-baseline.py -t $DEV_URL -r dast_report.html'
 //                     }
-                    container('docker-tools') {
-                        sh 'docker run -t owasp/zap2docker-stable zap-baseline.py -t $DEV_URL || exit 0'
+                    container('zap') {
+                        sh 'zap-baseline.py -t $DEV_URL || exit 0'
                     }
                 }
             }

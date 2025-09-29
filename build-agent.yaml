@@ -64,6 +64,12 @@ spec:
       command:
         - cat
       tty: true
+    - name: zap
+      image: owasp/zap2docker-stable
+      imagePullPolicy: Always
+      command:
+        - cat
+      tty: true
   volumes:
     - name: m2
       hostPath:
